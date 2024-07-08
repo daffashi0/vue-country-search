@@ -11,6 +11,7 @@ const router = createRouter({
     },
     {
       path: '/:countryName',
+
       component: DetailView
     }
   ]

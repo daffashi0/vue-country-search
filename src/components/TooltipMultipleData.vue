@@ -1,5 +1,5 @@
 <script setup>
-defineProps(['capital', 'region', 'subregion'])
+defineProps(['countries'])
 </script>
 <template>
   <div>

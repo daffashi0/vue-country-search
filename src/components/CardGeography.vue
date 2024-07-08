@@ -1,5 +1,5 @@
 <script setup>
-defineProps(['capital', 'region', 'subregion'])
+const props = defineProps(['capital', 'region', 'subregion'])
 </script>
 <template>
   <v-card elevation="1" class="h-full">
@@ -7,15 +7,15 @@ defineProps(['capital', 'region', 'subregion'])
       <div className="flex flex-col m-2 gap-2 justify-center">
         <h3 className="text-xl">
           Capital:
-          <p className="font-medium inline">{{ capital }}</p>
+          <p className="font-medium inline">{{ props.capital[0] }}</p>
         </h3>
         <h3 className="text-xl">
           Region:
-          <p className="font-medium inline">{{ region }}</p>
+          <p className="font-medium inline">{{ props.region }}</p>
         </h3>
         <h3 className="text-xl">
           Subregion:
-          <p className="font-medium inline">{{ subregion }}</p>
+          <p className="font-medium inline">{{ props.subregion }}</p>
         </h3>
       </div>
     </v-card-item>
